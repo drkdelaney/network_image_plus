@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class NetworkImage extends StatelessWidget {
-  const NetworkImage({
+class NetworkImagePlus extends StatelessWidget {
+  const NetworkImagePlus({
     super.key,
     required this.url,
     required this.width,

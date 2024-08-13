@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:web/web.dart';
 
-class NetworkImage extends StatelessWidget {
-  const NetworkImage({
+class NetworkImagePlus extends StatelessWidget {
+  const NetworkImagePlus({
     super.key,
     required this.url,
     required this.width,
@@ -10,21 +10,21 @@ class NetworkImage extends StatelessWidget {
   });
 
   final String url;
-  final int width;
-  final int height;
+  final double? width;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width.toDouble(),
-      height: height.toDouble(),
+      width: width,
+      height: height,
       child: HtmlElementView.fromTagName(
         tagName: 'img',
         onElementCreated: (Object element) {
           final img = element as HTMLImageElement;
           img.src = url;
-          img.width = width;
-          img.height = height;
+          if (width != null) img.width = width!.toInt();
+          if (height != null) img.height = height!.toInt();
         },
       ),
     );

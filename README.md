@@ -11,29 +11,33 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Network Image Plus is a Flutter package that allows you to rendered images on the web using CanvasKit without CORS issues.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+This plugin uses `HtmlElementView` to create an `img` element and set the src to the url provided.
+If the plugin is running on a io platform, it will use the regular `Image.network` widget.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add `network_image_plus` as a dependency in your `pubspec.yaml` file.
+```dart
+network_image_plus: ^1.0.0
+```
+```dart
+flutter pub add network_image_plus
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your dart file
 
 ```dart
-const like = 'sample';
+import 'package:network_image_plus/network_image_plus.dart';
+
+const image = NetworkImagePlus(
+  url: 'https://example.com/image.png',
+  width: 100,
+  height: 100,
+);
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.

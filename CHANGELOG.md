@@ -1,3 +1,7 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* Initial 1.0.0 release
+
+## 1.0.1
+
+* Added an example file
