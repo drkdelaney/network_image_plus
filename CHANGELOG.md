@@ -13,3 +13,8 @@
 ## 1.0.3
 
 * Removed the required flag from the width and height properties.
+
+## 1.0.4
+
+* Added styling to have web images centered and auto sizing if width or height is null.
+* Fixed JSFunction type error when running on web.
