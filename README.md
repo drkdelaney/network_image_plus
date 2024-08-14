@@ -22,7 +22,7 @@ If the plugin is running on a io platform, it will use the regular `Image.networ
 
 Add `network_image_plus` as a dependency in your `pubspec.yaml` file.
 ```yaml
-network_image_plus: ^1.0.5
+network_image_plus: ^1.0.6
 ```
 or install it using the command
 ```shell
@@ -40,5 +40,6 @@ const image = NetworkImagePlus(
   url: 'https://example.com/image.png',
   width: 100,
   height: 100,
+  fit: BoxFit.cover,
 );
 ```

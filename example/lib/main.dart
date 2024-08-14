@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
             url: 'https://example.com/image.png',
             width: 100,
             height: 100,
+            fit: BoxFit.cover,
           ),
         ),
       ),

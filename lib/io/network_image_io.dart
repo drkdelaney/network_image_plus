@@ -7,12 +7,14 @@ class NetworkImagePlus extends StatelessWidget {
     this.width,
     this.height,
     this.errorBuilder,
+    this.fit,
   }) : super();
 
   final String url;
   final double? width;
   final double? height;
   final ImageErrorWidgetBuilder? errorBuilder;
+  final BoxFit? fit;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +23,7 @@ class NetworkImagePlus extends StatelessWidget {
       width: width,
       height: height,
       errorBuilder: errorBuilder,
+      fit: fit,
     );
   }
 }

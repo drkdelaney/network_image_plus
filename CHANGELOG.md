@@ -22,3 +22,7 @@
 ## 1.0.5
 
 * Add allowInterop to the JS function to fix the JSFunction type error when running on web.
+
+## 1.0.6
+
+* Add BoxFit to Network Image and convert to object fit for html image.
