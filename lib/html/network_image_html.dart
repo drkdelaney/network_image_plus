@@ -1,3 +1,5 @@
+import 'dart:js' show allowInterop;
+
 import 'package:flutter/widgets.dart';
 import 'package:web/web.dart';
 
@@ -31,10 +33,10 @@ class NetworkImagePlus extends StatelessWidget {
             img.style.marginLeft = 'auto';
             img.style.marginRight = 'auto';
             img.style.display = 'block';
-            img.onerror = (event) {
+            img.onerror = allowInterop((Event event) {
               debugPrint('NetworkImagePlus: onError event - $event');
-              errorBuilder?.call(context, element, null);
-            } as OnErrorEventHandler;
+              errorBuilder?.call(context, event, null);
+            }) as OnErrorEventHandler;
           } catch (e) {
             debugPrint('NetworkImagePlus: $e');
           }

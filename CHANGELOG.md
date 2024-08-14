@@ -18,3 +18,7 @@
 
 * Added styling to have web images centered and auto sizing if width or height is null.
 * Fixed JSFunction type error when running on web.
+
+## 1.0.5
+
+* Add allowInterop to the JS function to fix the JSFunction type error when running on web.

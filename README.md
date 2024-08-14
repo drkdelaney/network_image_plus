@@ -22,7 +22,7 @@ If the plugin is running on a io platform, it will use the regular `Image.networ
 
 Add `network_image_plus` as a dependency in your `pubspec.yaml` file.
 ```yaml
-network_image_plus: ^1.0.4
+network_image_plus: ^1.0.5
 ```
 or install it using the command
 ```shell
