@@ -21,10 +21,11 @@ If the plugin is running on a io platform, it will use the regular `Image.networ
 ## Getting started
 
 Add `network_image_plus` as a dependency in your `pubspec.yaml` file.
-```dart
-network_image_plus: ^1.0.0
+```yaml
+network_image_plus: ^1.0.3
 ```
-```dart
+or install it using the command
+```shell
 flutter pub add network_image_plus
 ```
 

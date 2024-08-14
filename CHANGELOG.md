@@ -9,3 +9,7 @@
 ## 1.0.2
 
 * Updated the repository URL
+
+## 1.0.3
+
+* Removed the required flag from the width and height properties.

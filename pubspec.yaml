@@ -1,6 +1,6 @@
 name: network_image_plus
 description: "Network Image Plus is a Flutter package that allows you to rendered images on the web using CanvasKit without CORS issues."
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/drkdelaney/network_image_plus
 
 environment:

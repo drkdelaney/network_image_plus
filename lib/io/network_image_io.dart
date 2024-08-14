@@ -4,8 +4,8 @@ class NetworkImagePlus extends StatelessWidget {
   const NetworkImagePlus({
     super.key,
     required this.url,
-    required this.width,
-    required this.height,
+    this.width,
+    this.height,
   }) : super();
 
   final String url;
